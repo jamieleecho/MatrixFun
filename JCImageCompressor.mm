@@ -3,7 +3,7 @@
 //  MediaMatrixExamples
 //
 //  Created by Jamie Cho on 2010-11-05.
-//  Copyright 2010 CS2 Technologies LLC. All rights reserved.
+//  Copyright 2010 Jamie Cho. All rights reserved.
 //
 
 #import "JCImageCompressor.h"

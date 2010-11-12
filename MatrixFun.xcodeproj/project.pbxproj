@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		256AC3DA0F4B6AC300CF3369 /* MatrixFunAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* MatrixFunAppDelegate.m */; };
+		52218285128DD0CA00917D4E /* README in Resources */ = {isa = PBXBuildFile; fileRef = 52218284128DD0CA00917D4E /* README */; };
 		52DFD313128DB3BC005C262A /* SimpleMatrixExample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52DFD312128DB3BC005C262A /* SimpleMatrixExample.cpp */; };
 		52F9D11E12875EB000BC0FCA /* Exception.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52F9D11B12875EAF00BC0FCA /* Exception.cpp */; };
 		52F9D11F12875EB000BC0FCA /* Functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52F9D11D12875EB000BC0FCA /* Functions.cpp */; };
@@ -34,6 +35,7 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		52218284128DD0CA00917D4E /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		52DFD311128DB3BC005C262A /* SimpleMatrixExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleMatrixExample.h; sourceTree = "<group>"; };
 		52DFD312128DB3BC005C262A /* SimpleMatrixExample.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleMatrixExample.cpp; sourceTree = "<group>"; };
 		52F9D11B12875EAF00BC0FCA /* Exception.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Exception.cpp; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				8D1107310486CEB800E47090 /* MatrixFun-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+				52218284128DD0CA00917D4E /* README */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				52218285128DD0CA00917D4E /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
