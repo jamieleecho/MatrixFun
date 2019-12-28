@@ -6,8 +6,6 @@
 //  Copyright 2008 Jamie Cho. All rights reserved.
 //
 
-#import <QTKit/QTKit.h>
-#import <Quicktime/Quicktime.h>
 #import "JCMediaMatrixWindowController.h"
 
 static CIContext *context;

@@ -107,7 +107,7 @@ jcho::Matrix<T>::Matrix(const std::string &str) : _storage(NULL), _m(0), _n(0), 
   }
 
   // Copy the temporary buffer to the final location
-  _m = rowsAndColumns.size();
+  _m = (int)rowsAndColumns.size();
   _n = (originalNumCols < 0) ? 0 : originalNumCols;
   _size = (originalNumCols < 0) ? 1 : (_m * _n);
   _storage = new double[_size];
