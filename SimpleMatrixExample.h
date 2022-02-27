@@ -14,7 +14,7 @@
 extern "C" {
 #endif
 
-void simpleMatrixExample();
+extern void simpleMatrixExample(void);
 
 #ifdef __cplusplus
 }

@@ -18,7 +18,7 @@ typedef double (^JCImageCompressorSampleFunction)(int, int);
   @private NSInteger numYTerms;
 }
 
-+(JCImageCompressorBasisFunction) powerFunctionWithNumXTerms:(int)numXTerms numYTerms:(int)numYTerms;
++(JCImageCompressorBasisFunction) powerFunctionWithNumXTerms:(NSInteger)numXTerms numYTerms:(NSInteger)numYTerms;
 
 @property (readwrite,retain) NSImage *inputImage;
 @property (readwrite,retain) NSImage *outputImage;

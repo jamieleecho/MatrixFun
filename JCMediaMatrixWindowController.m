@@ -15,7 +15,7 @@ static CIContext *context;
 static void init() {
   if (context == nil) {
     context = [CIContext contextWithCGContext:
-                    [[NSGraphicsContext currentContext] graphicsPort]
+                    [[NSGraphicsContext currentContext] CGContext]
                     options: nil];
     [context retain];
   }
@@ -26,7 +26,7 @@ static void init() {
 	NSOpenPanel *openPanel = [NSOpenPanel openPanel];
   [openPanel setAllowedFileTypes:[NSArray arrayWithObject: @"jpg"]];
   [openPanel beginSheetModalForWindow:[self window] completionHandler: ^(NSInteger result) {
-    if (NO == [_imageCompressor openFile:[openPanel filename]]) {
+    if (NO == [_imageCompressor openFile:openPanel.URL.path]) {
       NSLog(@"oops!!!!");
     } else {
       NSLog(@"ok");

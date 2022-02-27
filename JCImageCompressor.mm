@@ -6,6 +6,7 @@
 //  Copyright 2010 Jamie Cho. All rights reserved.
 //
 
+#import <CoreImage/CoreImage.h>
 #import "JCImageCompressor.h"
 #include "Matrix.h"
 
@@ -16,7 +17,7 @@
 @synthesize inputImage;
 @synthesize outputImage;
 
-+(JCImageCompressorBasisFunction) powerFunctionWithNumXTerms:(int)numXTerms numYTerms:(int)numYTerms {
++(JCImageCompressorBasisFunction) powerFunctionWithNumXTerms:(NSInteger)numXTerms numYTerms:(NSInteger)numYTerms {
   // Arbitrarily set the maximum power to 10
   __block double cx = (numXTerms < 2) ? 0 : 10 / (numXTerms - 1);
   __block double cy = (numYTerms < 2) ? 0 : 10 / (numYTerms - 1);
@@ -118,9 +119,9 @@
 
 -(JCImageCompressorSampleFunction) sampleFunctionFromBasisFunction:(JCImageCompressorBasisFunction)basisFunction {
   __block JCImageCompressorBasisFunction f = [basisFunction retain];
-  __block int numX = numXTerms;
-  __block int numY = numYTerms;
-  int numCoefficients = numX * numY;
+  __block NSInteger numX = numXTerms;
+  __block NSInteger numY = numYTerms;
+  NSInteger numCoefficients = numX * numY;
   std::vector<double> coefficients;
   NSSize size = self.inputImage.size;
   int width = (int)size.width;
@@ -136,7 +137,7 @@
   [imageRep release];
 
   // Setup the sample matrix and result vector. To do this, for every pixel...
-  jcho::Matrix<double> m(width * height, numY * numX);
+  jcho::Matrix<double> m(width * height, (int)(numY * numX));
   jcho::Matrix<double> v(width * height, 1);
   int row = 0;
   for(int yy=0; yy<height; yy++) {
